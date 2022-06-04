@@ -1,0 +1,29 @@
+@media(min-width: 768px) {
+	/* HEADER */
+	.icon {
+		display: none;
+	}
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.menu {
+		display: flex;
+		align-items: center;
+		width: auto;
+		height: 75px;
+		padding: 0;
+		background-image: none;
+		background-color: #FFF;
+		color: #333;
+		transform: translateY(0);
+	}
+	.menu-item:hover {
+		background-color: #000;
+		color: #FFF;
+		transition: .3s;
+	}
+
+	
+}
