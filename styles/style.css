@@ -11,7 +11,7 @@
 	--bg-menu-mobile: hsl(270, 9%, 17%);
 	--bg-menu-desktop: #FFF;
 	--bg-plans-btn: hsl(270, 9%, 17%);
-	--bg-hero-mobile: hsl(256, 26%, 20%); 
+	--bg-hero: hsl(256, 26%, 20%); 
 	--bg-hero-link-hover: #FFF;
 	--font-color-light: #FFF;
 	--font-color-grayish: hsl(216, 30%, 68%);
@@ -124,7 +124,7 @@ body {
 	background-image: url(../images/bg-pattern-intro-left-mobile.svg);
 	background-position: left top;
 	background-repeat: no-repeat;
-	background-color: var(--bg-hero-mobile);
+	background-color: var(--bg-hero);
 	text-align: center;
 	color: var(--font-color-light);
 }
