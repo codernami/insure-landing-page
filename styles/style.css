@@ -12,6 +12,7 @@
 	--bg-menu-desktop: #FFF;
 	--bg-plans-btn: hsl(270, 9%, 17%);
 	--bg-hero-mobile: hsl(256, 26%, 20%); 
+	--bg-hero-link-hover: #FFF;
 	--font-color-light: #FFF;
 	--font-color-grayish: hsl(216, 30%, 68%);
 	--font-color-dark: hsl(270, 9%, 17%);
@@ -116,7 +117,10 @@ body {
 }
 .hero_info {
 	height: 570px;
-	padding: 8rem 1.8rem 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	background-image: url(../images/bg-pattern-intro-left-mobile.svg);
 	background-position: left top;
 	background-repeat: no-repeat;
@@ -125,11 +129,14 @@ body {
 	color: var(--font-color-light);
 }
 .hero_title{
+	width: min(350px, 89%);
 	font-family: 'DM Serif Display', serif;
 	font-size: 2.7rem;
+	letter-spacing: 2px;
 	padding-bottom:  1rem;	
 }
 .hero_text {
+	width: min(320px, 89%);
 	line-height: 1.5;
 	margin-bottom: 2rem;
 }
