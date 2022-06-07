@@ -1,6 +1,6 @@
 @media(min-width: 768px) {
 	/*----------------------------------------
-	 		HEADER / NAVIGATION MENU 
+	 		1.HEADER / NAVIGATION MENU 
 	----------------------------------------*/
 	.header {
 		display: flex;
@@ -43,7 +43,7 @@
 	}
 
 	/*----------------------------------------
-	 		HERO SECTION 
+	 		2.HERO SECTION 
 	----------------------------------------*/
 	.hero {
 		display: flex;
@@ -82,5 +82,30 @@
 		background-color: var(--bg-hero-link-hover);
 		color:  var(--font-color-dark);
 		cursor:  pointer;
+	}
+	/*----------------------------------------
+	 		3.SERVICES SECTION 
+	----------------------------------------*/
+	.services_title {
+		align-self: flex-start;
+	}
+	.services_title:before {
+		width: 35%;
+		left: 0%;
+	}
+	.services_articles {
+		display: flex;
+		justify-content: flex-start;
+	}
+	.service_img {
+		margin: 0;
+	}
+	.service_title {
+		text-align: left;
+		margin-left: 0;
+	}
+	.service_text {
+		margin: 0;
+		text-align: left;
 	}
 }
