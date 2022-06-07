@@ -162,9 +162,6 @@ img {
 	text-align: center;
 	padding: 5rem 2rem;	
 }
-.service {
-	padding-top: 2rem;
-}
 .services_title {
 	font-family: 'DM Serif Display', serif;
 	font-size: 2.8rem;
@@ -181,9 +178,18 @@ img {
 	left: 25%;
 	border-top: 1px solid var(--font-color-grayish);
 }
+
+.service {
+	padding-top: 2rem;
+}
+.service_img {
+	width: min(60px, 70%);
+	margin: 0 auto;
+}
 .service_title {
 	font-family: 'DM Serif Display', serif;
 	font-size: 1.5rem;
+	text-align: center;
 	color:  var(--font-color-dark);
 	margin: 1rem;
 }
@@ -193,7 +199,4 @@ img {
 	font-size: 1rem;
 	color:  var(--font-color-grayish);
 }
-.service_img {
-	width: min(60px, 70%);
-	margin: 0 auto;
-}
+
