@@ -4,6 +4,7 @@
 - 2.SECTION HERO
 - 3.SERVICES SECTION
 - 4.INFO-DETAILS
+- 5.FOOTER
 ------------------------------------------*/
 
 /*----------------------------------------
@@ -19,6 +20,7 @@
 	--font-color-light: #FFF;
 	--font-color-grayish: hsl(216, 30%, 68%);
 	--font-color-dark: hsl(270, 9%, 17%);
+	--font-color-dark-grayish: hsl(273, 4%, 51%);
 }
 
 * {
@@ -225,4 +227,44 @@ img {
 	text-transform: uppercase;
 	border:  1px solid #FFF;
 	padding: .5rem 1.5rem;
+}
+/*----------------------------------------
+			5. FOOTER
+-----------------------------------------*/ 
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 4rem 1rem;
+}
+.footer_bar {
+	padding:  2rem;
+
+}
+.social-links {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	padding-top: 1rem;
+}
+.footer_links {
+	text-transform: uppercase;
+}
+.footer_links-group {
+	text-align: center;
+	margin-bottom: .5rem;
+}
+.footer_links-group h2 {
+	margin: 1rem;
+	font-size: 1rem;
+	color: var(--font-color-dark-grayish);
+}
+.footer_links-group ul {
+	list-style-type: none;
+	font-weight: 700;
+}
+.footer_links-group ul li {
+	padding: .5rem;
 }
