@@ -124,4 +124,36 @@
 		color:  var(--font-color-dark);
 		cursor:  pointer;
 	}
+	/*----------------------------------------
+	 		5.FOOTER
+	----------------------------------------*/
+	.footer_bar {
+		display: flex;
+		justify-content: space-between;
+		width: 70%;
+		border-bottom: 1px solid var(--font-color-dark-grayish);
+	}
+	.footer_logo {
+		width: 15%;
+		height: 20%;
+	}
+	.social-links_item:hover {
+		cursor: pointer;
+	}
+	.footer_links {
+		display: flex;
+		justify-content: space-around;
+		width: 80%;
+		padding-top: 2rem;
+	}
+	.footer_links-group {
+		text-align: left;
+	}
+	.footer_links-group h2 {
+		margin: 0;
+		margin-bottom: 2rem;
+	}
+	.footer_links-group ul li{
+		padding-left: 0;
+	}
 }
