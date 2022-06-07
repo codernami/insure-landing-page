@@ -41,4 +41,46 @@
 	.menu-item:last-child a:hover{
 		color: var(--font-color-light);
 	}
+
+	/*----------------------------------------
+	 		HERO SECTION 
+	----------------------------------------*/
+	.hero {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		background-color: var(--bg-hero);
+		padding: 2rem;
+	}
+	.hero_img {
+		transform: translateY(200px);
+	}
+	.hero_info {
+		align-items: flex-start;
+		text-align: left;
+		background-image: none;
+	}
+	.hero_title {	
+		position: relative;
+	}
+	.hero_title:before {
+		content: '';
+		position: absolute;
+		height: 5px;
+		width: 25%;
+		top: 0;
+		left: 0%;
+		border-top: 1px solid #FFF;
+	}
+	.hero_text {
+		width: min(530px, 89%);
+	}
+	.hero-link {
+		padding: 0;
+	}
+	.hero_link:hover {
+		background-color: var(--bg-hero-link-hover);
+		color:  var(--font-color-dark);
+		cursor:  pointer;
+	}
 }
