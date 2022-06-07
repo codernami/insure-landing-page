@@ -50,13 +50,27 @@
 		flex-direction: row-reverse;
 		align-items: center;
 		background-color: var(--bg-hero);
+		padding: 2rem;
 	}
-	
+	.hero_img {
+		transform: translateY(200px);
+	}
 	.hero_info {
 		align-items: flex-start;
 		text-align: left;
-		padding: 2rem;
 		background-image: none;
+	}
+	.hero_title {	
+		position: relative;
+	}
+	.hero_title:before {
+		content: '';
+		position: absolute;
+		height: 5px;
+		width: 25%;
+		top: 0;
+		left: 0%;
+		border-top: 1px solid #FFF;
 	}
 	.hero_text {
 		width: min(530px, 89%);
