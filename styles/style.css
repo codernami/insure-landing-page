@@ -2,7 +2,6 @@
 - GENERAL STYLES
 - 1.HEADER
 - 2.SECTION HERO
-- 3.SERVICES ARTICLES
 ------------------------------------------*/
 
 /*----------------------------------------
@@ -149,47 +148,4 @@ img {
 	text-transform: uppercase;
 	border:  1px solid #FFF;
 	padding: .5rem 1.5rem;
-}
-/*----------------------------------------
-			3. SERVICES ARTICLES
------------------------------------------*/ 
-.services {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	padding: 5rem 2rem;
-}
-.service {
-	padding-top: 2rem;
-}
-.services_title {
-	font-family: 'DM Serif Display', serif;
-	font-size: 2.8rem;
-	color:  var(--font-color-dark);
-	margin-bottom: 2rem;
-	position: relative;
-}
-.services_title:before {
-	content: '';
-	position: absolute;
-	height: 5px;
-	width: 50%;
-	top: -15px;
-	left: 25%;
-	border-top: 1px solid var(--font-color-grayish);
-}
-.service_title {
-	font-family: 'DM Serif Display', serif;
-	font-size: 1.5rem;
-	color:  var(--font-color-dark);
-	margin: 1rem;
-}
-.service_text {
-	color:  var(--font-color-grayish);
-}
-.service_img {
-	width: min(60px, 70%);
-	margin: 0 auto;
 }
