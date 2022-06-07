@@ -108,4 +108,20 @@
 		margin: 0;
 		text-align: left;
 	}
+	/*----------------------------------------
+	 		4.INFO-DETAILS 
+	----------------------------------------*/
+	.info {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.info_text {
+		width: 350px;
+		text-align: left;
+	}
+	.info_link:hover {
+		background-color: var(--bg-hero-link-hover);
+		color:  var(--font-color-dark);
+		cursor:  pointer;
+	}
 }
