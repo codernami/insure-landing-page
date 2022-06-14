@@ -1,159 +1,238 @@
+@media(min-width: 500px) {
+	.nav_menu {
+		background-position: bottom -10vh right 0, left 0 top 22vh;
+		height: 650px;
+	}
+}		
+
+
 @media(min-width: 768px) {
 	/*----------------------------------------
 	 		1.HEADER / NAVIGATION MENU 
 	----------------------------------------*/
-	.header {
-		display: flex;
-	}
-	.logo {
-		position: relative;
+	.header{
+		height: 90px;
 	}
 	.icon {
 		display: none;
 	}
-	.navbar {
-		flex-direction: row;
+	.nav {
+		display: flex;
+		justify-content: space-between;
 		align-items: center;
+		padding: 1rem;
 	}
-	.menu {
+	.navbar {
+		padding: 0;
+	}
+	.nav_menu {
 		display: flex;
 		justify-content: end;
 		height: auto;
 	    padding: 0;
+	    margin-top: 0;
 	    background-image: none;
-	    background-color: var(--bg-menu-desktop);
+	    background-color: var(--very-light-gray);
 	    transform: translateY(0);
 	}
-	.menu-item a {
-		padding: .5rem;
-		color: var(--font-color-grayish);
+	.nav_menu-item a {
+		padding: .8rem;
+		color: var(--dark-grayish-violet);
 		transition: text-shadow .1s;
 	}
-	.menu-item:last-child a{
-		padding: 1rem;
-		background-color: var(--bg-plans-btn);
+	.nav_menu-item:last-child a {
+		padding: 1rem 1.5rem;
+		background-color: var(--very-dark-violet);
 		color: var(--font-color-light);	
+		margin-left: 1rem;
 	}
-	.menu-item a:hover {
-		color: var(--font-color-dark);
+	.nav_menu-item a:hover {
+		color: var(--very-dark-violet);
 		text-shadow: 0 0 .65px #000;
 	}
-	.menu-item:last-child a:hover{
+	.nav_menu-item:last-child a:hover{
 		color: var(--font-color-light);
 	}
 
 	/*----------------------------------------
 	 		2.HERO SECTION 
 	----------------------------------------*/
+	.hero-container {
+		position: relative;
+		padding-bottom: 8rem;
+		overflow: hidden;
+	}
 	.hero {
 		display: flex;
 		flex-direction: row-reverse;
 		align-items: center;
-		background-color: var(--bg-hero);
-		padding: 2rem;
-	}
-	.hero_img {
-		transform: translateY(200px);
+		justify-content: space-around;	
+		height: 600px;
+		padding: 1rem;	
+		background-color: var(--dark-violet);
+		gap:  1rem;
 	}
 	.hero_info {
+		width: 50%;
 		align-items: flex-start;
 		text-align: left;
 		background-image: none;
+		background-color: var(--dark-violet);
 	}
-	.hero_title {	
+	.hero_img {
+		width: 50%;
+	}
+	.hero_title {
 		position: relative;
+		letter-spacing: 0;
 	}
 	.hero_title:before {
 		content: '';
 		position: absolute;
 		height: 5px;
-		width: 25%;
-		top: 0;
+		width: 33%;
+		top: -15%;
 		left: 0%;
 		border-top: 1px solid #FFF;
 	}
 	.hero_text {
-		width: min(530px, 89%);
+		margin-top: 1rem;
 	}
-	.hero-link {
-		padding: 0;
+	.hero_link {
+		padding: .8rem 1.8rem;	
 	}
 	.hero_link:hover {
-		background-color: var(--bg-hero-link-hover);
-		color:  var(--font-color-dark);
+		background-color: #FFF;
+		color:  var(--very-dark-violet);
 		cursor:  pointer;
+	}
+
+	.img-right-desktop {
+		display: block;
+		position: absolute;
+		top: -5%;
+		right: -3%;
+		width: 28%;
+		height: 70%;
+		z-index: 300;
+	}
+	.img-left-desktop {
+		display: block;
+		position: absolute;
+		top: 55%;
+		left: -15%;
+		width: 26%;
+		height: 62%;
+		z-index: 300;
 	}
 	/*----------------------------------------
 	 		3.SERVICES SECTION 
 	----------------------------------------*/
+	.services {
+		height: 650px;
+		padding: 4rem 2rem;
+		text-align: left;
+	}
 	.services_title {
 		align-self: flex-start;
 	}
 	.services_title:before {
 		width: 35%;
 		left: 0%;
+		top: -55px;
 	}
 	.services_articles {
-		display: flex;
-		justify-content: flex-start;
-	}
-	.service_img {
-		margin: 0;
+		display: flex;		
+		gap:  2.5rem;
 	}
 	.service_title {
-		text-align: left;
+		margin: 1rem;
 		margin-left: 0;
+		font-size: 1.5rem;
+		text-align: left;
 	}
 	.service_text {
-		margin: 0;
-		text-align: left;
+		width: auto;
+		margin-left: 0;
+		line-height: 1.5;
 	}
 	/*----------------------------------------
 	 		4.INFO-DETAILS 
 	----------------------------------------*/
 	.info {
+		height: 252px;
 		flex-direction: row;
 		justify-content: space-around;
+		margin: 4rem 2rem;
+		background-image: url('../images/bg-pattern-how-we-work-desktop.svg');
+		background-repeat: no-repeat;
+		background-position: top right;
 	}
 	.info_text {
 		width: 350px;
-		text-align: left;
+		text-align: left;		
+		margin: 0;
+		font-weight: 700;
+	}
+	.info_link {
+		padding: .8rem 1.8rem;	
+		background-color: var(--dark-violet);
 	}
 	.info_link:hover {
-		background-color: var(--bg-hero-link-hover);
-		color:  var(--font-color-dark);
+		background-color: #FFF;
+		color:  var(--very-dark-violet);
 		cursor:  pointer;
 	}
 	/*----------------------------------------
 	 		5.FOOTER
 	----------------------------------------*/
-	.footer_bar {
-		display: flex;
-		justify-content: space-between;
-		width: 70%;
-		border-bottom: 1px solid var(--font-color-dark-grayish);
+	.footer {
+		background-image: url('../images/bg-pattern-footer-desktop.svg');
+		background-repeat: no-repeat;
+		background-position: top left;
+		
 	}
-	.footer_logo {
-		width: 15%;
-		height: 20%;
+	.line {
+		display: none;
+	}
+	.footer_bar {
+		flex-direction: row;
+		justify-content: space-between;
+		width: 88%;
+		height: 164px;
+		margin: 0 auto;
+		border-bottom: 1px solid var(--dark-grayish-violet);
+		background-image: none;
+	}
+	.social-links {
+		gap: 1rem;
 	}
 	.social-links_item:hover {
 		cursor: pointer;
 	}
 	.footer_links {
-		display: flex;
+		flex-direction: row;
 		justify-content: space-around;
-		width: 80%;
-		padding-top: 2rem;
+		align-items: flex-start;
+		padding-top: 4rem;
+		background-color: transparent;
 	}
 	.footer_links-group {
 		text-align: left;
 	}
 	.footer_links-group h2 {
+		font-family: 'Karla', sans-serif;
 		margin: 0;
 		margin-bottom: 2rem;
+		padding-top: 0;
+		font-size: .9rem;
 	}
 	.footer_links-group ul li{
 		padding-left: 0;
+		font-size: .8rem;
+	}
+	.footer_links-group ul li:hover {
+		text-decoration: underline;
+		cursor: pointer;
 	}
 }
