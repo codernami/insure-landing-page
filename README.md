@@ -56,7 +56,7 @@ Users should be able to:
   </svg>  
 ```
 
-- Use srcset to indicate the navigator what image to load according to the screen width (600w, 1200w in this case). And always add a backup image.  
+- Use srcset to indicate the browser what image to load according to the screen width (600w, 1200w in this case). And always add a backup image.  
 
 ```
 <img srcset=" ./images/image-intro-mobile.jpg 600w, ./images/image-intro-desktop.jpg 1200w"
