@@ -16,13 +16,13 @@
 	.icon {
 		display: none;
 	}
-	.nav {
+	.navbar {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 1rem;
 	}
-	.navbar {
+	.top_bar {
 		padding: 0;
 	}
 	.nav_menu {
