@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [CSS Insure landing page](https://your-solution-url.com)
+- Solution URL: [CSS responsive landing page](https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8/hub/css-responsive-landing-page-IKFsCYL5BU)
 - Live Site URL: [Insure landing page](https://codernami.github.io/insure-landing-page/)
 
 ## My process
