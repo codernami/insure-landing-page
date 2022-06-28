@@ -28,6 +28,8 @@
 body {
 	font-family: 'Karla', sans-serif;
 	color: var(--dark-violet);
+	max-width: 1440px;
+	margin: 0 auto;
 }
 img {
 	display: block;
@@ -45,7 +47,7 @@ p {
 	font-size: clamp(1rem, 1.25vw, 1.25rem);	
 }
 a {
-	font-size: clamp(1rem, 1vw, 1.25rem);
+	font-size: clamp(1rem, 1vw, 1.15rem);
 }
 */
 
@@ -69,19 +71,19 @@ a {
 	background-color: var(--very-light-gray);;
 }
 .nav_menu {
-position: absolute;	
-z-index: 50;
+	position: absolute;	
 	width: 100%;
-	height: 600px;
-	padding-top: 1rem;
+	height: 70%;
+	padding-top: 2rem;
 	list-style-type: none;
 	background-image: url('../images/bg-pattern-mobile-nav.svg');
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: contain;
 	background-color: var(--very-dark-violet);
-	transform: translateY(-654px);
+	transform: translateY(-100%);
 	transition: transform .9s;
+	z-index: 50;
 }
 .nav_menu-item {
 	padding: 1.5rem 0;
@@ -101,7 +103,6 @@ z-index: 50;
 
 /* Classes used with js */
 .show-menu {
-	
 	transform: translateY(0);
 	transition: transform .9s;
 }
@@ -133,7 +134,7 @@ z-index: 50;
 	text-align: center;
 }
 .hero_title{
-	width: min(310px, 80%);
+	width: min(300px, 80%);
 	padding-bottom:  1rem;	
 }
 .hero_text {
