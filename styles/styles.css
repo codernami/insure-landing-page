@@ -1,7 +1,7 @@
 /*----------------------------------------
 - GENERAL STYLES
 - 1.HEADER
-- 2.SECTION HERO
+- 2.HERO SECTION
 - 3.SERVICES SECTION
 - 4.INFO-DETAILS
 - 5.FOOTER
@@ -37,19 +37,19 @@ img {
 }
 h1 {
 	font-family: 'DM Serif Display', serif;
-	font-size: clamp(2.5rem, 3vw, 4rem);
+	font-size: clamp(2.5rem, 4vw, 2.8rem);
 }
 h2 {
 	font-family: 'DM Serif Display', serif;
 	font-size: clamp(2.8rem, 5vw, 5rem);
 }
 p {
-	font-size: clamp(1rem, 1.25vw, 1.25rem);	
+	font-size: clamp(1.15rem, 1.25vw, 1.5rem);
 }
 a {
 	font-size: clamp(1rem, 1vw, 1.15rem);
 }
-*/
+
 
 /*----------------------------------------
 		1.HEADER / NAVIGATION MENU
@@ -115,7 +115,7 @@ a {
 
 
 /*----------------------------------------
-			2. SECTION HERO
+			2. HERO SECTION
 -----------------------------------------*/ 
 .hero-container {
 	position: relative;
@@ -138,7 +138,7 @@ a {
 	padding-bottom:  1rem;	
 }
 .hero_text {
-	width: min(325px, 80%);
+	width: min(360px, 90%);
 	line-height: 1.5;
 	margin-bottom: 2rem;
 	color: var(--very-light-gray);
