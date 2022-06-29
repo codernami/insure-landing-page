@@ -35,10 +35,6 @@ img {
 	display: block;
 	width:  100%;
 }
-h1 {
-	font-family: 'DM Serif Display', serif;
-	font-size: clamp(2.5rem, 4vw, 2.8rem);
-}
 h2 {
 	font-family: 'DM Serif Display', serif;
 	font-size: clamp(2.8rem, 5vw, 5rem);
@@ -134,8 +130,11 @@ a {
 	text-align: center;
 }
 .hero_title{
-	width: min(300px, 80%);
-	padding-bottom:  1rem;	
+	width: 300px;
+	font-family: 'DM Serif Display', serif;
+	font-size: 2.5rem;
+	font-weight: 400;
+	padding-bottom: 1rem;
 }
 .hero_text {
 	width: min(360px, 90%);

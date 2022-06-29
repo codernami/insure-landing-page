@@ -4,7 +4,7 @@
 	 		1.HEADER / NAVIGATION MENU 
 	----------------------------------------*/
 	.navbar {
-		padding: 1rem 6rem;
+		padding: 1rem 4rem;
 	}
 
 	/*----------------------------------------
@@ -20,7 +20,8 @@
 		width: 50%;
 	}
 	.hero_title {
-		width: 400px;
+		font-size: 3rem;
+		width: 395px;
 	}
 	.hero_title:before {
 		width: 25%;
@@ -29,6 +30,8 @@
 		width: 400px;
 	}
 	.hero_img {	
+		padding-left: 4rem;
+		width: 58%;
 		transform: translateY(135px);	
 	}
 
@@ -81,11 +84,26 @@
 	.hero_info {
 		width: 60%;
 	}
+	.hero_img {
+		width: 50%;
+	}
+	.hero_title {
+		font-size: 4rem;
+		width: 460px;
+		letter-spacing: 2px;
+	}
+	
 	.hero_text {
-		width: 600px;
+		width: 615px;
 	}
 	
 	.services_articles {
 		gap: 6rem;	
 	}
 }
+
+@media(min-width: 1440px) {
+	.navbar {
+		padding: 1rem 6rem;
+	}
+}	
