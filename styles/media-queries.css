@@ -343,7 +343,7 @@
 	}
 	.hero_title {
 		font-size: 4rem;
-		width: 475px;
+		width: 515px;
 		letter-spacing: 2px;
 	}
 	.hero_text {
@@ -372,9 +372,6 @@
 	----------------------------------------*/
 	.navbar {
 		padding: 1rem 6rem;
-	}
-	.hero_title {
-		width: 490px;
 	}
 	.info_text {
 		width: 430px;
