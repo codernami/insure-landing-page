@@ -315,7 +315,7 @@
 		margin: 6rem 6rem;
 	}
 	.info_text {
-		width: 410px;
+		width: 425px;
 		font-size: 3rem;
 	}
 	/*----------------------------------------
@@ -343,7 +343,7 @@
 	}
 	.hero_title {
 		font-size: 4rem;
-		width: 460px;
+		width: 475px;
 		letter-spacing: 2px;
 	}
 	.hero_text {
@@ -372,5 +372,11 @@
 	----------------------------------------*/
 	.navbar {
 		padding: 1rem 6rem;
+	}
+	.hero_title {
+		width: 490px;
+	}
+	.info_text {
+		width: 430px;
 	}
 }	

@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/screenshot.png)
+![Screenshot intro](./design/screenshot1.png)
 
 
 
