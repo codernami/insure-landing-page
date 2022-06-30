@@ -56,18 +56,6 @@ Users should be able to:
   </svg>  
 ```
 
-- Use srcset to indicate the browser what image to load according to the screen width (600w, 1200w in this case). And always add a backup image.  
-
-```
-<img srcset=" ./images/image-intro-mobile.jpg 600w, ./images/image-intro-desktop.jpg 1200w"
-  src="./images/image-intro-desktop.jpg" alt="Smiling family walking inline">
-```
-
-
-### Continued development
-
-Working with svgs and how to apply according to the design and refine responsive development.
-
 
 ### Useful resources
 
