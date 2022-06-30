@@ -1,7 +1,7 @@
 /*----------------------------------------
 - GENERAL STYLES
 - 1.HEADER
-- 2.SECTION HERO
+- 2.HERO SECTION
 - 3.SERVICES SECTION
 - 4.INFO-DETAILS
 - 5.FOOTER
@@ -28,29 +28,24 @@
 body {
 	font-family: 'Karla', sans-serif;
 	color: var(--dark-violet);
-}
-.container {
-	width: 100%;
-	height: 100vh;
-	margin: 0 auto;
 	max-width: 1440px;
+	margin: 0 auto;
 }
 img {
 	display: block;
 	width:  100%;
 }
-
-h1, h2 {
+h2 {
 	font-family: 'DM Serif Display', serif;
 	font-size: clamp(2.8rem, 5vw, 5rem);
 }
 p {
-	font-size: clamp(1rem, 1.25vw, 1.25rem);	
+	font-size: clamp(1.15rem, 1.25vw, 1.5rem);
 }
 a {
-	font-size: clamp(1rem, 1.25vw, 1.25rem);
+	font-size: clamp(1rem, 1vw, 1.15rem);
 }
-*/
+
 
 /*----------------------------------------
 		1.HEADER / NAVIGATION MENU
@@ -58,29 +53,33 @@ a {
 .header {
 	position: sticky;
 	top: 0;
-	height: 80px;
-	background-color: var(--very-light-gray);
+	background-color: #FFF;
 	z-index: 999;
 }
-.navbar {
+
+.top_bar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2rem 2rem 1rem;
+	padding: 2rem;
+	position: relative;
+	z-index: 100;
+	background-color: #FFF;
 }
 .nav_menu {
-	display: none;
+	position: absolute;	
 	width: 100%;
 	height: 600px;
-	padding-top: 1rem;
+	padding-top: 2rem;
 	list-style-type: none;
 	background-image: url('../images/bg-pattern-mobile-nav.svg');
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: contain;
 	background-color: var(--very-dark-violet);
-	transform: translateY(-654px);
+	transform: translateY(-100%);
 	transition: transform .9s;
+	z-index: 50;
 }
 .nav_menu-item {
 	padding: 1.5rem 0;
@@ -100,7 +99,6 @@ a {
 
 /* Classes used with js */
 .show-menu {
-	display: block;
 	transform: translateY(0);
 	transition: transform .9s;
 }
@@ -113,7 +111,7 @@ a {
 
 
 /*----------------------------------------
-			2. SECTION HERO
+			2. HERO SECTION
 -----------------------------------------*/ 
 .hero-container {
 	position: relative;
@@ -132,11 +130,14 @@ a {
 	text-align: center;
 }
 .hero_title{
-	width: min(310px, 80%);
-	padding-bottom:  1rem;	
+	width: 300px;
+	font-family: 'DM Serif Display', serif;
+	font-size: 2.5rem;
+	font-weight: 400;
+	padding-bottom: 1rem;
 }
 .hero_text {
-	width: min(325px, 80%);
+	width: min(360px, 90%);
 	line-height: 1.5;
 	margin-bottom: 2rem;
 	color: var(--very-light-gray);
@@ -153,6 +154,7 @@ a {
 /*----------------------------------------
 			3. SERVICES SECTION
 -----------------------------------------*/ 
+
 .services {
 	display: flex;
 	flex-direction: column;
@@ -160,6 +162,10 @@ a {
 	justify-content: center;
 	text-align: center;
 	padding: 10rem 2rem 7rem;	
+	position: relative;
+	background-image: url(../images/bg-pattern-intro-right-mobile.svg);
+	background-repeat: no-repeat;
+	background-position: top -15% right;
 }
 .services_title {
 	font-family: 'DM Serif Display', serif;
@@ -221,6 +227,7 @@ a {
 	font-size: 2.5rem;
 	text-align: center;
 	margin: 1rem;
+	width: 300px;
 }
 .info_link {
 	text-decoration: none;
@@ -242,19 +249,23 @@ a {
 	flex-direction: column;
 	justify-content: end;
 	align-items: center;
-	height: 190px;
-	padding-bottom: .5rem;
+	height: 220px;
+	padding-bottom: 1.5rem;
 	background-image: url(../images/bg-pattern-footer-mobile.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: bottom;
 }
-
 .social-links {
 	list-style-type: none;
 	display: flex;
 	align-items: center;
 	gap: .8rem;
-	padding-top: 1rem;
+	padding-top: 2rem;
+}
+.social-links_item {
+	font-size: 1.6rem;
+	color: var(--dark-grayish-violet);
 }
 .line {
 	width: 85%;
