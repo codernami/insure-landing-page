@@ -1,7 +1,19 @@
+@media(min-width: 600px) {
+	/*----------------------------------------
+	 		1.HEADER / NAVIGATION MENU 
+	----------------------------------------*/
+	.nav_menu {
+		height: 785px;
+	}
+}
+
 @media(min-width: 768px) {
 	/*----------------------------------------
 	 		1.HEADER / NAVIGATION MENU 
 	----------------------------------------*/
+	.header {
+		box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
+	}
 	.icon {
 		display: none;
 	}
@@ -10,7 +22,7 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 1rem 2rem;
-		background-color: var(--very-light-gray);
+		background-color: #FFF;
 	}
 	.top_bar {
 		padding: 0;
@@ -25,11 +37,11 @@
 	    padding: 0;
 	    margin-top: 0;
 	    background-image: none;
-	    background-color: var(--very-light-gray);
+	    background-color: #FFF;
 	    transform: translateY(0);
 	}
 	.nav_menu-item {
-		padding: 1rem 0;
+		padding: .5rem 0;
 	}
 	.nav_menu-item a {
 		padding: .8rem;
@@ -114,22 +126,24 @@
 		height: 97%;
 		z-index: 300;
 	}
-	.img-left-desktop {
-		display: block;
-		position: absolute;
-		top: 55%;
-		left: -15%;
-		width: 26%;
-		height: 62%;
-		z-index: 300;
-	}
 	/*----------------------------------------
 	 		3.SERVICES SECTION 
 	----------------------------------------*/
+	.img-left-desktop {
+		display: block;
+		position: absolute;
+		top: -50%;
+		left: -8%;
+		width: 26%;
+		height: 90%;
+		z-index: 300;
+	}
 	.services {
+		position: relative;
 		height: 650px;
 		padding: 4rem 2rem;
 		text-align: left;
+		background-image: none;
 	}
 	.services_title {
 		align-self: flex-start;
@@ -158,7 +172,7 @@
 	 		4.INFO-DETAILS 
 	----------------------------------------*/
 	.info {
-		height: 252px;
+		height: 250px;
 		flex-direction: row;
 		justify-content: space-around;
 		margin: 4rem 2rem;
@@ -174,6 +188,7 @@
 	}
 	.info_link {
 		padding: .8rem 1.8rem;	
+		margin-top: 0;
 		background-color: var(--dark-violet);
 	}
 	.info_link:hover {
@@ -206,6 +221,7 @@
 		gap: 1rem;
 	}
 	.social-links_item:hover {
+		color: 	var(--very-dark-violet);
 		cursor: pointer;
 	}
 	.footer_links {
@@ -234,3 +250,127 @@
 		cursor: pointer;
 	}
 }
+
+
+@media(min-width: 992px) {
+	/*----------------------------------------
+	 		1.HEADER / NAVIGATION MENU 
+	----------------------------------------*/
+	.navbar {
+		padding: 1rem 4rem;
+	}
+	/*----------------------------------------
+	 		2.HERO SECTION 
+	----------------------------------------*/
+	.hero-container {
+		padding-bottom: 14rem;
+	}
+	.hero {	
+		padding: 0 6rem;
+	}	
+	.hero_info {
+		width: 50%;
+	}
+	.hero_title {
+		font-size: 3rem;
+		width: 395px;
+	}
+	.hero_title:before {
+		width: 25%;
+	}
+	.hero_text {
+		width: 400px;
+	}
+	.hero_img {	
+		padding-left: 4rem;
+		width: 58%;
+		transform: translateY(135px);	
+	}
+	/*----------------------------------------
+	 		3.SERVICES SECTION 
+	----------------------------------------*/
+	.img-left-desktop {
+		top: -57%;
+		left: 0;
+	}
+	.services {
+		padding: 4rem 6rem;
+	}
+	.services_title {
+		font-size: 4.5rem;
+	}
+	.service_title {
+		margin: 1.5rem;
+		margin-left: 0;
+		font-size: 1.8rem;
+	}
+	.service_text {
+		max-width: 320px;
+	}
+
+	/*----------------------------------------
+	 		4.INFO-DETAILS 
+	----------------------------------------*/
+	.info {
+		margin: 6rem 6rem;
+	}
+	.info_text {
+		width: 410px;
+		font-size: 3rem;
+	}
+	/*----------------------------------------
+	 		5.FOOTER
+	----------------------------------------*/
+	.footer_bar {
+		width: 80%;
+	}
+	.footer_links {
+		align-items: flex-start;
+		width: 80%;
+		padding-left: 5rem;
+	}
+}
+
+@media(min-width: 1200px) {
+	/*----------------------------------------
+	 		2.HERO SECTION 
+	----------------------------------------*/
+	.hero_info {
+		width: 60%;
+	}
+	.hero_img {
+		width: 50%;
+	}
+	.hero_title {
+		font-size: 4rem;
+		width: 460px;
+		letter-spacing: 2px;
+	}
+	.hero_text {
+		width: 615px;
+	}
+	/*----------------------------------------
+	 		3.SERVICES SECTION 
+	----------------------------------------*/
+	.services_articles {
+		gap: 6rem;	
+	}
+	/*----------------------------------------
+	 		5.FOOTER
+	----------------------------------------*/
+	.footer_bar {
+		width: 85%;
+	}
+	.footer_links {
+		padding-left: 2rem;
+	}
+}
+
+@media(min-width: 1440px) {
+	/*----------------------------------------
+	 		1.HEADER / NAVIGATION MENU 
+	----------------------------------------*/
+	.navbar {
+		padding: 1rem 6rem;
+	}
+}	
