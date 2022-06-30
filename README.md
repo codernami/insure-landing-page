@@ -61,6 +61,9 @@ Users should be able to:
 
 - [A beginners guide to SVG](https://youtu.be/ZJSCl6XEdP8) - This helped me to add svg and styling them.
 
+- [Responsive web design checker](https://responsivedesignchecker.com/#home)
+
+
 ## Author
 
 - Github - [Codernami](https://github.com/codernami)
